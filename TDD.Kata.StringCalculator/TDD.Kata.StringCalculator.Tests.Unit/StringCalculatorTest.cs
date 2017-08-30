@@ -58,5 +58,21 @@ namespace TDD.Kata.StringCalculator.Tests.Unit
             //Your expected value.
             Assert.Equal(3, result);
         }
+
+        [Fact]
+        public void TestNumbersWithCommasString()
+        {
+            //Arrange
+            //Your set up!.
+            string numbers = "1\n2,3";
+
+            //Act
+            //Your principal action to test.
+            int result = this.Target.add(numbers);
+
+            //Assert
+            //Your expected value.
+            Assert.Equal(6, result);
+        }
     }
 }

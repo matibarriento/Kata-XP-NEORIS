@@ -14,11 +14,10 @@ namespace TDD.Kata.StringCalculator
                 return 0;
 
             int sum = 0;
-            foreach (string number in numbers.Split(',')) {
-
+            foreach (string number in numbers.Split(',','\n'))
+            {
                 sum += Convert.ToInt32(number);
             }
-
 
             return sum;
         }
